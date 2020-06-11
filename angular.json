@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,9 +97,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -123,6 +133,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "movies"
+    }
+  },
+  "defaultProject": "movies",
+  "cli": {
+    "analytics": "02673fbd-2178-43d4-ba4d-576ab2e28122"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
