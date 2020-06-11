@@ -1,0 +1,7 @@
+<div class="search-box my-5 p-1">
+  <input class="search-box-input" type="text" [(ngModel)]="searchText" (ngModelChange)="emitSearch()"/>
+  <div class="search-box-placeholder-wrapper" *ngIf="searchText == ''">
+    <fa-icon [icon]="faSearch" class="search-box-placeholder"></fa-icon>
+    <span>&nbsp; Search movies, actors or genre.</span>
+  </div>
+</div>

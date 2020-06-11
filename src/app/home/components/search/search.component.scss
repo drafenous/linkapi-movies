@@ -1,0 +1,34 @@
+.search-box {
+  position: relative;
+
+  &-placeholder-wrapper {
+    pointer-events: none;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    color: #A0AFA0;
+  }
+
+  &-input {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid #c8d2be;
+    width: 100%;
+    transition: ease-in-out all 0.4s;
+  }
+
+  &-input:focus {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0;
+    outline: 0px transparent !important;
+    border-bottom: 1px solid #37b987;
+  }
+
+  &-input:focus + .search-box-placeholder-wrapper {
+    display: none;
+  }
+}
