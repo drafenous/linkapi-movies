@@ -1,0 +1,66 @@
+// small button
+.favBtnSmall{
+  color: #FCFCFC;
+  font-size: 18px;
+  text-shadow: 0px 0px 6px #00004D;
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.favBtnSmall.show{
+  opacity: 1 !important;
+}
+
+:host-context(.poster:hover) .favBtnSmall{
+  opacity: 1 !important;
+}
+
+// big button
+.favBtn{
+  // line-height: 48px;
+  font-family: 'Metropolis';
+  font-weight: bold;
+  color: #637463;
+  font-size: 22px;
+  line-height: 35px;
+  cursor: pointer;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.favBtn .iconBox{
+  display: inline-block;
+  border: 3px solid #EB4C3D;
+  border-radius: 5px;
+  color: #EB4C3D;
+  width: 40px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+.favBtn .favorited{
+  display: inline-block;
+  background-color: #EB4B3C;
+  border-radius: 5px;
+  color: #FCFCFC;
+  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -19,7 +19,7 @@ export class FavoritesService {
   set setFavorites(values: Movies[]){
     values.forEach(value => {
       console.log(value.poster);
-      value.poster = String(value.poster);
+      value.poster = value.poster;
     })
     const str = JSON.stringify(values);
     localStorage.setItem('favorites', str);

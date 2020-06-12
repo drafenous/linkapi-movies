@@ -1,0 +1,93 @@
+.btnReturn{
+  color: #637463;
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.movieTitle{
+  font-size: 72px;
+  font-family: 'Metropolis';
+  font-weight: bold;
+  color: #414641;
+}
+
+.info{
+  font-size: 26px;
+  font-family: 'Metropolis';
+  font-weight: bold;
+  color: #414641;
+}
+
+.info i{
+  font-size: 28px;
+  color: #637463;
+}
+
+.info .rating{
+  display: inline-block;
+  min-width: 40px;
+  max-width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  color: white
+}
+
+.info .rating.R{
+  background-color: #EB4B3C;
+}
+
+.info .rating.G{
+  background-color: #a1cd57;
+}
+
+.info .rating.PG{
+  background-color: #03a5f1;
+}
+
+.info .rating.PG-13{
+  background-color: #ba47db;
+}
+
+.synopsis{
+  font-family: 'Metropolis';
+  font-weight: medium;
+  text-align: left;
+  font-size: 28px;
+  color: #637463;
+  letter-spacing: 0px;
+}
+
+.lists{
+  font-family: 'Metropolis';
+}
+
+.lists ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.lists ul li{
+  text-align: left;
+  color: #414641;
+  font-size: 18px;
+  font-weight: medium;
+}
+.lists .listTitle{
+  color: #637463;
+  font-weight: light;
+  font-size: 20px;
+}
+
+.poster{
+  border-radius: 6px;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 660px;
+}

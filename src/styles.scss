@@ -3,8 +3,22 @@
 // Metropolis fonts
 @font-face{
   font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Regular.otf') format('opentype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Medium.otf') format('opentype');
+  font-weight: medium;
   font-style: normal;
 }
 

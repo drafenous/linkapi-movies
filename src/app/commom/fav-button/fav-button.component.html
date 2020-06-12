@@ -1,3 +1,18 @@
-<div #smallFavButton>
+<!-- small icon -->
+<div *ngIf="btnSize == 'small'" #smallFavButton [class]="'favBtnSmall ' + (isFav ? 'show' : 'hide')">
   <fa-icon [icon]="(isFav ? faHeart : farHeart)" (click)="makeFavorite()"></fa-icon>
+</div>
+
+<!-- big button -->
+<div *ngIf="btnSize != 'small'" #bigFavButton [class]="'favBtn'" (click)="makeFavorite()">
+  <div *ngIf="isFav; else elseBlock">
+    <div class="favorited">
+      <fa-icon [icon]="faHeart"></fa-icon> Favorited
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div class="notFav">
+      <div class="iconBox"><fa-icon [icon]="faHeart"></fa-icon></div> Add to favorites
+    </div>
+  </ng-template>
 </div>

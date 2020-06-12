@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-auto p-0 btnReturn my-3" (click)="back($event)">
+    <fa-icon [icon]="faArrowLeft"></fa-icon> Return
+  </div>
+</div>
+
+<div class="row" *ngIf="movie">
+  <div class="col-12 col-md-7">
+    <div class="row mb-3">
+      <h1 class="movieTitle">{{ movie.title }}</h1>
+    </div>
+
+    <div class="row info mb-3">
+      <div class="col p-0">
+        <fa-icon [icon]="faCalendar"></fa-icon> {{ movie.year }}
+      </div>
+      <div class="col p-0">
+        <fa-icon [icon]="faClock"></fa-icon> {{ movie.runtime }}
+      </div>
+      <div class="col p-0">
+        <div [class]="'rating ' + movie.rated">
+          {{ movie.rated }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <app-fav-button [element]="movie"></app-fav-button>
+    </div>
+
+    <div class="row pt-3 synopsis">
+      <div class="col-12 p-0">
+        <p>
+          {{ movie.plot }}
+        </p>
+      </div>
+    </div>
+
+    <div class="row pt-3 lists">
+      <div class="col-5 p-0">
+        <p class="listTitle">
+          Cast
+        </p>
+        <ul>
+          <li *ngFor="let actor of lists.actors">{{ actor }}</li>
+        </ul>
+      </div>
+
+
+      <div class="col p-0">
+        <p class="listTitle">
+          Genre
+        </p>
+        <ul>
+          <li *ngFor="let genre of lists.genres">{{ genre }}</li>
+        </ul>
+      </div>
+
+      <div class="col p-0">
+        <p class="listTitle">
+          Director
+        </p>
+        <ul>
+          <li *ngFor="let director of lists.directors">{{ director }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-5 poster" [style.background-image]="movie.posterSafeUrl">
+    <!-- poster image -->
+  </div>
+</div>

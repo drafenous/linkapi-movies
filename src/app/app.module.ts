@@ -13,6 +13,7 @@ import { CardsComponent } from './home/components/cards/cards.component';
 import { SearchComponent } from './home/components/search/search.component';
 import { NotFoundComponent } from './commom/not-found/not-found.component';
 import { FavButtonComponent } from './commom/fav-button/fav-button.component';
+import { MovieComponent } from './movie/movie.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FavButtonComponent } from './commom/fav-button/fav-button.component';
     CardsComponent,
     SearchComponent,
     NotFoundComponent,
-    FavButtonComponent
+    FavButtonComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,

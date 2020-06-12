@@ -1,9 +1,13 @@
 <div class="poster" [style.background-image]="movie.posterSafeUrl">
+  <div class="favIcon">
+    <app-fav-button [element]="movie" [btnSize]="'small'"></app-fav-button>
+  </div>
+  <a [routerLink]="'/' + movie.title">
   <div class="desc">
-    <app-fav-button [element]="movie"></app-fav-button>
     <div class="metadata">
-      <span class="movieTitle">{{movie.title}}</span><br/>
+      <span class="movieTitle">{{movie.title}}</span><br />
       <span class="movieYear">{{movie.year}}</span>
     </div>
   </div>
+  </a>
 </div>
