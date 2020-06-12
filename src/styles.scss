@@ -1,16 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Metropolis fonts
 @font-face{
-  font-family: 'Metropolis Regular';
+  font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face{
-  font-family: 'Metropolis Bold';
+  font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face{
-  font-family: 'Metropolis SemiBold';
+  font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-SemiBold.otf') format('opentype');
+  font-weight: semibold;
+  font-style: normal;
+}
+
+// Proxima Nova fonts
+@font-face{
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/Proxima-Nova-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/proxima-nova/Proxima-Nova-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }

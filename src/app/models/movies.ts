@@ -9,5 +9,6 @@ export interface Movies {
   director: string;
   actors: string;
   plot: string;
-  poster: SafeUrl;
+  poster: string;
+  posterSafeUrl?: SafeUrl;
 }

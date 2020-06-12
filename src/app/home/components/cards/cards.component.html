@@ -1,3 +1,9 @@
-<!-- <div [style.background-image]="backgroundImage">
-  {{movie.title}}
-</div> -->
+<div class="poster" [style.background-image]="movie.posterSafeUrl">
+  <div class="desc">
+    <app-fav-button [element]="movie"></app-fav-button>
+    <div class="metadata">
+      <span class="movieTitle">{{movie.title}}</span><br/>
+      <span class="movieYear">{{movie.year}}</span>
+    </div>
+  </div>
+</div>

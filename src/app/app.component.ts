@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from './commom/header/header.component';
+import { Component, OnInit } from '@angular/core';
+import { Movies } from './models/movies';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'movies';
+export class AppComponent implements OnInit {
+
+  constructor() {
+
+  }
+
+  ngOnInit(){
+  }
 }

@@ -11,6 +11,8 @@ import { HeaderComponent } from './commom/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardsComponent } from './home/components/cards/cards.component';
 import { SearchComponent } from './home/components/search/search.component';
+import { NotFoundComponent } from './commom/not-found/not-found.component';
+import { FavButtonComponent } from './commom/fav-button/fav-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SearchComponent } from './home/components/search/search.component';
     HomeComponent,
     HeaderComponent,
     CardsComponent,
-    SearchComponent
+    SearchComponent,
+    NotFoundComponent,
+    FavButtonComponent
   ],
   imports: [
     BrowserModule,

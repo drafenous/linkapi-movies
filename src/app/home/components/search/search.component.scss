@@ -7,6 +7,8 @@
     left: 5px;
     top: 0px;
     color: #A0AFA0;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
   }
 
   &-input {
@@ -17,6 +19,8 @@
     border-bottom: 1px solid #c8d2be;
     width: 100%;
     transition: ease-in-out all 0.4s;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
   }
 
   &-input:focus {
