@@ -1,0 +1,38 @@
+input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0;
+  border-bottom: 1px solid #c8d2be;
+  width: 100%;
+  transition: ease-in-out all 0.4s;
+  font-family: 'Proxima Nova';
+  font-size: 18px;
+  outline: none;
+  color: #A0AFA0;
+}
+
+.form-control:focus {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0;
+  outline: 0px transparent !important;
+  border-bottom: 1px solid #37b987;
+  box-shadow: none !important;
+  color: #A0AFA0;
+}
+
+.form-control::placeholder{
+  color: #A0AFA0;
+  font-family: 'Proxima Nova';
+  font-size: 18px;
+}
+
+label{
+  margin-bottom: 0px;
+  font-family: 'Proxima Nova';
+  font-weight: regular;
+  color: #414646;
+  font-size: 18px;
+}

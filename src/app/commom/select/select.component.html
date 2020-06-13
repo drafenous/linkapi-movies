@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label [for]="'input_' + name" *ngIf="label">{{ label }}</label>
+  <select #select class="form-control"
+    [(ngModel)]="value"
+    [id]="'input_' + name"
+    [name]="name"
+    [attr.required]="required"
+    [attr.disabled]="disabled"
+    [attr.readonly]="readonly"
+    (change)="selectChange($event)">
+    <option *ngFor="let option of listOptions" [value]="option.value" [attr.disabled]="(option.disabled ? 'disabled' : null)">{{option.name}}</option>
+  </select>
+</div>

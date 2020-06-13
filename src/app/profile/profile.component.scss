@@ -1,0 +1,33 @@
+.phrase{
+  font-family: 'Metropolis';
+  font-weight: regular;
+  text-align: right;
+  font-size: 28px;
+  color: #637463;
+};
+
+.btn{
+  font-family: 'Google Sans';
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  height: 45px;
+}
+
+.btn-link{
+  color: #A0AFA0;
+  text-decoration: none;
+}
+.btn-link:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-success, .btn-success:focus, .btn-success:active {
+  width: 138px;
+  outline: none;
+  box-shadow: none !important;
+  border: none;
+  border-radius: 6px;
+  background-color: #3CC896 !important;
+}

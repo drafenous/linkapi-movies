@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit {
 
   sanitizePosters() {
     this.movies.forEach(movie => {
-      console.log(movie.poster)
       movie.posterSafeUrl = this.sanitizer.bypassSecurityTrustStyle('url(' + movie.poster + ')');
     });
   }

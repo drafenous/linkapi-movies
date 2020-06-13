@@ -14,6 +14,9 @@ import { SearchComponent } from './home/components/search/search.component';
 import { NotFoundComponent } from './commom/not-found/not-found.component';
 import { FavButtonComponent } from './commom/fav-button/fav-button.component';
 import { MovieComponent } from './movie/movie.component';
+import { ProfileComponent } from './profile/profile.component';
+import { InputComponent } from './commom/input/input.component';
+import { SelectComponent } from './commom/select/select.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { MovieComponent } from './movie/movie.component';
     SearchComponent,
     NotFoundComponent,
     FavButtonComponent,
-    MovieComponent
+    MovieComponent,
+    ProfileComponent,
+    InputComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,

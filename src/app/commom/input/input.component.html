@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label [for]="'input_' + name" *ngIf="label">{{ label }}</label>
+  <input #input class="form-control"
+    [(ngModel)]="value"
+    [type]="type"
+    [id]="'input_' + name"
+    [placeholder]="placeholder"
+    [attr.required]="required"
+    [attr.disabled]="disabled"
+    [attr.readonly]="readonly"
+    (input)="inputChange($event)">
+</div>

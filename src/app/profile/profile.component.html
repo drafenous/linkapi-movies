@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<div class="row" style="margin-top: 100px;">
+  <div class="col-5 phrase">
+    It's time to create your profile<br/> and customize your experience<br/> in <strong>LinkApi Movies!</strong>
+  </div>
+  <div class="col px-5">
+    <form>
+      <div class="row">
+        <div class="col-6">
+          <app-input type="text" name="name" label="Name" placeholder="Enter your name" [value]="profile.name" (newValue)="inputChanged('name', $event)"></app-input>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <app-input type="number" name="age" label="Age" placeholder="Enter your age" [value]="profile.age" (newValue)="inputChanged('age',$event)"></app-input>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <app-input type="text" name="favoriteMovie" label="Favorite Movie" placeholder="Enter your favorite movie" [value]="profile.favoriteMovie" (newValue)="inputChanged('favoriteMovie', $event)"></app-input>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <app-select name="favoriteGenre" label="Favorite Genre" [value]="profile.favoriteGenre" (newValue)="inputChanged('favoriteGenre', $event)" [listOptions]="genres"></app-select>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 50px;">
+  <div class="col-12 text-right">
+    <button type="button" class="btn btn-link" (click)="cancel()">Cancel</button>
+    <button type="button" class="btn btn-success" (click)="saveProfile()">Save Profile</button>
+  </div>
+</div>

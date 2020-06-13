@@ -1,3 +1,7 @@
+.logo{
+  line-height: 48px;
+}
+
 .app-title{
   position: absolute;
   color: #37B987;
@@ -6,4 +10,12 @@
   left: 210px;
   font-family: 'Metropolis';
   font-weight: semibold;
+}
+
+.icon, .icon:focus{
+  font-size: 48px;
+  text-align: right;
+  color: #A0AFA0;
+  cursor: pointer;
+  outline: none;
 }

@@ -11,7 +11,7 @@
 @font-face{
   font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Regular.otf') format('opentype');
-  font-weight: normal;
+  font-weight: regular;
   font-style: normal;
 }
 
@@ -47,6 +47,14 @@
 @font-face{
   font-family: 'Proxima Nova';
   src: url('./assets/fonts/proxima-nova/Proxima-Nova-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Google Sans
+@font-face{
+  font-family: 'Google Sans';
+  src: url('./assets/fonts/google-sans/GoogleSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }

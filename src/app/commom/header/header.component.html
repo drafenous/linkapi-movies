@@ -1,7 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 p-0 mt-3">
+    <div class="col mt-3 p-0 logo">
       <img src="/assets/images/logo-verde.svg" alt="Logo da LinkApi" title="Logo da LinkApi" width="196px" /> <span class="align-bottom app-title">movies</span>
+    </div>
+    <div class="col-2 p-0 icon" *ngIf="currentPath !== '/profile'">
+      <fa-icon [icon]="faUserCircle" routerLink="/profile"></fa-icon>
     </div>
   </div>
 </div>
